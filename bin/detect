@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [[ $(date +%u) -eq 5 ]]; then
+  echo "Friday Deploy"
+  exit 0
+else
+  exit 1
+fi
