@@ -13,5 +13,5 @@ weekday_replace() {
   sed "s/Friday/$WEEKDAY/"
 }
 
-echo "-----> so you decided to deploy on a $WEEKDAY?"
+echo "-----> so you decided to take the plunge?"
 cat ./friday_jumper.txt | weekday_replace | indent
