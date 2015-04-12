@@ -1,8 +1,17 @@
 #!/bin/sh
 
+WEEKDAY="Friday"
+case $(date +%u) in
+  6) WEEKDAY="Saturday";;
+  7) WEEKDAY="Sunday";;
+esac
+
 indent() {
-  sed -u 's/^/       /'
+  sed 's/^/       /'
+}
+weekday_replace() {
+  sed "s/Friday/$WEEKDAY/"
 }
 
-echo "-----> so you decided to deploy on a Friday?"
-cat ./friday_jumper.txt | indent
+echo "-----> so you decided to deploy on a $WEEKDAY?"
+cat ./friday_jumper.txt | weekday_replace | indent
