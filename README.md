@@ -36,6 +36,7 @@ Depending on the weekday you may see something like this:
 ```
 
 ## How to use it
+* To be used with the super awesome [buildpack multi](https://github.com/ddollar/heroku-buildpack-multi)
 * Create a `.buildpacks` file in your project root with the following content:
 ```
 https://github.com/trsc/heroku-buildpack-friday-deploy
