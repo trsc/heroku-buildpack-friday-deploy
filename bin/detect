@@ -4,5 +4,5 @@ case $(date +%u) in
   5) echo "Friday Deploy"; exit 0;;
   6) echo "Saturday Deploy"; exit 0;;
   7) echo "Sunday Deploy"; exit 0;;
-  *) exit 1;;
+  *) exit 0;;
 esac
