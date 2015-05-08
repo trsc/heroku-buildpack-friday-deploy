@@ -7,7 +7,7 @@ weekday_replace() {
   sed "s/Friday/$WEEKDAY/"
 }
 
-if [[ $(date +%u) -gt 5 ]]; then
+if [ $(date +%u) -gt 4 ]; then
   WEEKDAY="Friday"
   case $(date +%u) in
     6) WEEKDAY="Saturday";;
